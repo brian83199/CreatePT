@@ -20,9 +20,10 @@ def main():
             temp()
         elif option == 0:
             done = True
+            break
 ###################################################################
 
-temp():
+def temp():
     print("Enter your temperature: ")
     temp = float(input())
     if ((temp < 97) or (temp > 98.9)):
@@ -34,36 +35,29 @@ temp():
     ans = (input())
 
     if ans.lower() == 'yes':
-        done = False
-    else:
-        print("Are any of these the reason? ")
         done = True
+    else:
+        print("Please press the reason if available ")
+        done = False
+
+    if done == False:
+        print("Stress                         1 ")
+        print("Hot inside                     2 ")
+        print("Feeling sick                   3 ")
+        print("Naturally have cold hands      4 ")
+        print("Other                          5 ")
+        print("Just came from a workout       6 ")
+        print("Just came in from a cold day   7 ")
+        print("Exit                           0 ")
+        print("Enter option:", end = " ")
+        select = eval(input())
+        return select
 
 
 
-    print("Stress                         1 ")
-    print("Hot inside                     2 ")
-    print("Feeling sick                   3 ")
-    print("Naturally have cold hands      4 ")
-    print("Other                          5 ")
-    print("Just came from a workout       6 ")
-    print("Just came in from a cold day   7 ")
-    print("Exit                           0 ")
-    print("Enter option:", end = " ")
-    select = eval(input())
-    return select
 
 
-
-###################################################################
-# questions I want to ask, not code yet
-
-# if the answer to the first question is no, say "Did you just work out or come from outside on a cold day"
-# if yes, then exit code. If no, create a list of options for them to choose from
-# if temperature is 102 or above, then ask if 911 is needed to be called
-
-# List of possible reasons for your temperature to be high
-#
 
 if __name__ == '__main__': main()
 
+           
