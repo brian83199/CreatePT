@@ -54,6 +54,29 @@ def temp():
         return select
 
 
+def questions():
+    done = False
+    while not done:
+        option = temp()
+        if ((option < 0) or (option > 7)): print("Invalid Option")
+        elif option == 1:
+            Stress()
+        else:
+            done = True
+
+
+import webbrowser
+def Stress():
+    print("Is the stress caused by work or school? ")
+    print("[Work / School / Family]: ")
+    ans = (input())
+
+    if ans.lower() == 'work':
+        done = True
+    elif print("Stress Relief in the Workplace: "):
+        webbrowser.open('https://www.helpguide.org/articles/stress/stress-in-the-workplace.htm')
+    else:
+        done = True
 
 
 
