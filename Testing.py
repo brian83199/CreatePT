@@ -58,21 +58,21 @@ def questions():
     while not done:
         option = temp()
         if ((option < 0) or (option > 7)): print("Invalid Option")
-        elif option == 1:
-		stress()
+	elif option == 1:
+		Stress()
 	elif option == 2:
 		anxiety()
-        elif option == 3:
+	elif option == 3:
 		feeling_sick()
-        elif option == 4:
+	elif option == 4:
 		naturally_cold_hands()
-        elif option == 5:
+	elif option == 5:
 		cold_day_outside()
-        elif option == 6:
+	elif option == 6:
 		workout()
-        else:
-            done = True
-	    break
+	else:
+		done = True
+		break
 def stress():
     print("Is the stress caused by work, school, or family? ")
     print("[Work / School / Family]: ")
@@ -112,7 +112,7 @@ def naturally_cold_hands():
     print("[Yes / No]: ")
     ans = eval(input())
     if ans.lower() == 'yes':
-        print("Here's how to raise the temperature of your handas: ")
+        print("Here's how to raise the temperature of your hands: ")
         print(webbrowser.open('http://www.naturalfertilityandwellness.com/raise-basal-body-temperature/'))
     else:
         done = True
@@ -143,4 +143,4 @@ def workout():
 
 if __name__ == '__main__': main()
 
-           
+                    
