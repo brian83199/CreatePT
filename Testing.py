@@ -42,8 +42,8 @@ def temp():
 
     if done == False:
         print("stress                         1 ")
-        print("hot inside                     2 ")
-        print("anxiety                        3 ")
+        print("anxiety                        2 ")
+        print("feeling_sick                   3 ")
         print("naturally_cold_hands           4 ")
         print("cold_day_outside               5 ")
         print("workout                        6 ")
