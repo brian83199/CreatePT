@@ -1,4 +1,4 @@
-
+import webbrowser
 def menu():
     print("Hello")
     print("Your temperature:      1")
@@ -131,7 +131,7 @@ def workout():
     print("Did you just workout? ")
     print("[Yes / No]: ")
     ans = eval(input())
-    if ans.lower() == 'yes':
+    if ans.lower() == 'no':
         done = True
     else:
         print("Here's how to lower your temperature after working out: ")
