@@ -4,8 +4,8 @@ def menu():
     print("Your temperature:      1")
     print("Exit:                  0")
     print("Enter option:", end = " ")
-    select = eval(input())
-    return select
+    option = eval(input())
+    return option
 
 ##################################################################
 
@@ -50,7 +50,7 @@ def temp():
         print("Exit                           0 ")
         print("Enter option:", end = " ")
         option = eval(input())
-        option select
+        return option
 
 
 def questions():
