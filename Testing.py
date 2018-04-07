@@ -59,7 +59,7 @@ def questions():
         option = temp()
         if ((option < 0) or (option > 7)): print("Invalid Option")
         elif option == 1:
-		Stress()
+		stress()
 	elif option == 2:
 		anxiety()
         elif option == 3:
