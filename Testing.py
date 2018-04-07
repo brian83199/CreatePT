@@ -41,12 +41,12 @@ def temp():
         done = False
 
     if done == False:
-        print("Stress                         1 ")
-        print("Hot inside                     2 ")
-        print("Feeling sick                   3 ")
-        print("Naturally have cold hands      4 ")
-        print("Just came from a workout       6 ")
-        print("Just came in from a cold day   7 ")
+        print("stress                         1 ")
+        print("hot inside                     2 ")
+        print("anxiety                        3 ")
+        print("naturally_cold_hands           4 ")
+        print("cold_day_outside               5 ")
+        print("workout                        6 ")
         print("Exit                           0 ")
         print("Enter option:", end = " ")
         select = eval(input())
