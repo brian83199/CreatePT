@@ -49,8 +49,8 @@ def temp():
         print("workout                        6 ")
         print("Exit                           0 ")
         print("Enter option:", end = " ")
-        select = eval(input())
-        return select
+        option = eval(input())
+        option select
 
 
 def questions():
