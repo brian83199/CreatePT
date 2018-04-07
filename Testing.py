@@ -54,25 +54,25 @@ def temp():
 
 
 def questions():
-    done = False
-    while not done:
-        option = temp()
-        if ((option < 0) or (option > 7)): print("Invalid Option")
-	elif option == 1:
-		Stress()
-	elif option == 2:
-		anxiety()
-	elif option == 3:
-		feeling_sick()
-	elif option == 4:
-		naturally_cold_hands()
-	elif option == 5:
-		cold_day_outside()
-	elif option == 6:
-		workout()
-	else:
-		done = True
-		break
+	done = False
+	while not done:
+		option = temp()
+		if ((option < 0) or (option > 7)): print("Invalid Option")
+		elif option == 1:
+			Stress()
+		elif option == 2:
+			anxiety()
+		elif option == 3:
+			feeling_sick()
+		elif option == 4:
+			naturally_cold_hands()
+		elif option == 5:
+			cold_day_outside()
+		elif option == 6:
+			workout()
+		else:
+			done = True
+			break
 def stress():
     print("Is the stress caused by work, school, or family? ")
     print("[Work / School / Family]: ")
