@@ -59,17 +59,17 @@ def questions():
         option = temp()
         if ((option < 0) or (option > 7)): print("Invalid Option")
         elif option == 1:
-            Stress()
+		Stress()
 	elif option == 2:
-            anxiety()
+		anxiety()
         elif option == 3:
-            feeling_sick()
+		feeling_sick()
         elif option == 4:
-            naturally_cold_hands()
+		naturally_cold_hands()
         elif option == 5:
-            cold_day_outside()
+		cold_day_outside()
         elif option == 6:
-            workout()
+		workout()
         else:
             done = True
 	    break
