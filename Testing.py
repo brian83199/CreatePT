@@ -1,3 +1,6 @@
+import RPi.GPIO as GPIO
+GPIO.setmode(BCM)
+
 import webbrowser
 def menu():
     print("Hello")
@@ -73,6 +76,7 @@ def questions():
 		else:
 			done = True
 			break
+		
 def stress():
     print("Is the stress caused by work, school, or family? ")
     print("[Work / School / Family]: ")
