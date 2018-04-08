@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
-GPIO.setmode(BCM)
+GPIO.setmode(GPIO.BCM)
+GPIO.VERSION
 
 import webbrowser
 def menu():
