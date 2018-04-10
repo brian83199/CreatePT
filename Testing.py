@@ -1,4 +1,6 @@
-
+import Rpi.GPIO as GPIO
+GPIO.setup(GPIO.BCM)
+GPIO.VERSION
 import webbrowser
 def menu():
     print("Hello")
