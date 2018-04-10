@@ -7,8 +7,8 @@ def menu():
     print("Your temperature:      1")
     print("Exit:                  0")
     print("Enter option:", end = " ")
-    option = eval(input())
-    return option
+    option1 = eval(input())
+    return option1
 
 ##################################################################
 
@@ -16,12 +16,12 @@ def menu():
 def main():
     done = False
     while not done:
-        option = menu()
-        if ((option < 0) or (option > 2)):
+        option2 = menu()
+        if ((option2 < 0) or (option2 > 2)):
             print("    Invalid selection")
-        elif option == 1:
+        elif option2 == 1:
             temp()
-        elif option == 0:
+        elif option2 == 0:
             done = True
             break
 ###################################################################
@@ -52,26 +52,26 @@ def temp():
         print("workout                        6 ")
         print("Exit                           0 ")
         print("Enter option:", end = " ")
-        option = eval(input())
-        return option
+        option3 = eval(input())
+        return option3
 
 
 def questions():
 	done = False
 	while not done:
-		option = temp()
-		if ((option < 0) or (option > 7)): print("Invalid Option")
-		elif option == 1:
+		option4 = temp()
+		if ((option4 < 0) or (option4 > 7)): print("Invalid Option")
+		elif option4 == 1:
 			Stress()
-		elif option == 2:
+		elif option4 == 2:
 			anxiety()
-		elif option == 3:
+		elif option4 == 3:
 			feeling_sick()
-		elif option == 4:
+		elif option4 == 4:
 			naturally_cold_hands()
-		elif option == 5:
+		elif option4 == 5:
 			cold_day_outside()
-		elif option == 6:
+		elif option4 == 6:
 			workout()
 		else:
 			done = True
