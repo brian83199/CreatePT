@@ -1,6 +1,4 @@
-import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BCM)
-GPIO.VERSION
+
 import webbrowser
 def menu():
     print("Hello")
@@ -60,7 +58,8 @@ def questions():
 	done = False
 	while not done:
 		option4 = temp()
-		if ((option4 < 0) or (option4 > 7)): print("Invalid Option")
+		if ((option4 < 0) or (option4 > 7)): 
+			print("Invalid Option")
 		elif option4 == 1:
 			Stress()
 		elif option4 == 2:
