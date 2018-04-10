@@ -1,6 +1,4 @@
-import Rpi.GPIO as GPIO
-GPIO.setup(GPIO.BCM)
-GPIO.VERSION
+
 import webbrowser
 def menu():
     print("Hello")
@@ -40,43 +38,44 @@ def temp():
     if ans.lower() == 'yes':
         done = True
     else:
-        print("Please press the reason if available ")
-        done = False
+        questions()
 
-    if done == False:
-        print("stress                         1 ")
-        print("anxiety                        2 ")
-        print("feeling_sick                   3 ")
-        print("naturally_cold_hands           4 ")
-        print("cold_day_outside               5 ")
-        print("workout                        6 ")
-        print("Exit                           0 ")
-        print("Enter option:", end = " ")
-        option3 = eval(input())
-        return option3
 
 
 def questions():
-	done = False
-	while not done:
-		option4 = temp()
-		if ((option4 < 0) or (option4 > 7)): 
-			print("Invalid Option")
-		elif option4 == 1:
-			Stress()
-		elif option4 == 2:
-			anxiety()
-		elif option4 == 3:
-			feeling_sick()
-		elif option4 == 4:
-			naturally_cold_hands()
-		elif option4 == 5:
-			cold_day_outside()
-		elif option4 == 6:
-			workout()
-		else:
-			done = True
-			break
+    done = False
+    print("Please press the reason if known: ")
+    print("stress                         1 ")
+    print("anxiety                        2 ")
+    print("feeling_sick                   3 ")
+    print("naturally_cold_hands           4 ")
+    print("cold_day_outside               5 ")
+    print("workout                        6 ")
+    print("Exit                           0 ")
+    print("Enter option:", end = " ")
+    option3 = eval(input())
+    return option3
+
+
+    while not done:
+        option4 = temp()
+        if ((option4 < 0) or (option4 > 7)): 
+       	        print("Invalid Option")
+        elif option4 == 1:
+                stress()
+        elif option4 == 2:
+                anxiety()
+        elif option4 == 3:
+                feeling_sick()
+        elif option4 == 4:
+                naturally_cold_hands()
+        elif option4 == 5:
+                cold_day_outside()
+        elif option4 == 6:
+                workout()
+        else:
+                done = True
+                break
 		
 def stress():
     print("Is the stress caused by work, school, or family? ")
