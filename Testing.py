@@ -29,7 +29,7 @@ def main():
 def temp():
     print("Enter your temperature: ")
     temp = float(input())
-    if ((temp < 97) or (temp > 98.9)):
+    if ((temp < 72.5) or (temp > 80)):
         print("Are you feeling well today?")
 
     else:
