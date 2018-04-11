@@ -41,7 +41,6 @@ def temp():
         questions()
 
 
-
 def questions():
     done = False
     print("Please press the reason if known: ")
