@@ -1,4 +1,4 @@
-bbrowser
+import webbrowser
 
 
 
