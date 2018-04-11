@@ -12,16 +12,19 @@ def menu():
 
 #Parker Witt has helped me with ordering th functions to allow the program to work properly. Also helped by removing a return option4 that didnt need to be there.
 def stress():
+    # done = true
     print("Is the stress caused by work, school, or family? ")
-    print("[Work / School / Family]: ")
+    print("[1 = work / 2 = school / 3 = family]: ")
     ans = eval(input())
-    if ans.lower() == 'work':
-        done = True
-    elif print("Stress Relief in the Workplace: "):
+    if ans == 1:
+        print("Stress Relief in the Workplace: ")
         print(webbrowser.open('https://www.helpguide.org/articles/stress/stress-in-the-workplace.htm'))
-    elif print("Stress Relief at School: "):
+        done = True
+    elif ans == 2:
+        print("Stress Relief at School: ")
         print(webbrowser.open('https://www.verywellmind.com/reduce-student-stress-and-excel-in-school-3145175'))
-    elif print("Stress Relief with the Family: "):
+    elif ans == 3:
+        print("Stress Relief with the Family: ")
         print(webbrowser.open('https://psychcentral.com/lib/tips-to-reduce-family-stress/'))
     else:
         done = False
@@ -29,9 +32,9 @@ def stress():
 
 def anxiety():
     print("Is the temperature caused anxiety? ")
-    print("[Yes / No]: ")
+    print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
-    if ans.lower() == 'yes':
+    if ans == 1:
         print("Here's how to lower your temperature from anxiety ")
         print(webbrowser.open('https://www.calmclinic.com/anxiety/symptoms/hotness'))
     else:
@@ -40,19 +43,19 @@ def anxiety():
 
 def feeling_sick():
     print("Are you feeling sick? ")
-    print("[Yes / No]: ")
+    print("[1 = Yes / 2 =  No]: ")
     ans = eval(input())
-    if ans.lower() == 'yes':
-        print("You might want to see a doctor or get some rest")
+    if ans == 2:
+        print("You might want to see a doctor or get some rest and always remember - an apple a day...")
     else:
         done = True
 
 
 def naturally_cold_hands():
     print("Do you have naturally cold hands? ")
-    print("[Yes / No]: ")
+    print("[1 = Yes / 2 =  No]: ")
     ans = eval(input())
-    if ans.lower() == 'yes':
+    if ans == 1:
         print("Here's how to raise the temperature of your hands: ")
         print(webbrowser.open('http://www.naturalfertilityandwellness.com/raise-basal-body-temperature/'))
     else:
@@ -61,9 +64,9 @@ def naturally_cold_hands():
 
 def cold_day_outside():
     print("If you were just outside, was it cold out? ")
-    print("[Yes / No]: ")
+    print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
-    if ans.lower == 'no':
+    if ans == 2:
         done = True
     else:
         print("Here's how to raise yuor temperature on a cold day: ")
@@ -72,9 +75,9 @@ def cold_day_outside():
 
 def workout():
     print("Did you just workout? ")
-    print("[Yes / No]: ")
+    print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
-    if ans.lower() == 'no':
+    if ans == 2:
         done = True
     else:
         print("Here's how to lower your temperature after working out: ")
@@ -160,4 +163,3 @@ def main():
 
 
 if __name__ == '__main__': main()
-
