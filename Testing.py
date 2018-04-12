@@ -24,12 +24,12 @@ def stress():
     elif ans == 2:
         print("Stress Relief at School: ")
         print(webbrowser.open('https://www.verywellmind.com/reduce-student-stress-and-excel-in-school-3145175'))
-    elif ans == 3:
+    else:
+        ans == 3:
         print("Stress Relief with the Family: ")
         print(webbrowser.open('https://psychcentral.com/lib/tips-to-reduce-family-stress/'))
-    else:
-        ans = menu()
-
+        ans = 0
+    exit(main())    
 
 def anxiety():
     print("Is the temperature caused anxiety? ")
@@ -39,39 +39,41 @@ def anxiety():
         print("Here's how to lower your temperature from anxiety ")
         print(webbrowser.open('https://www.calmclinic.com/anxiety/symptoms/hotness'))
     else:
-        ans = menu()
+        ans = 2
+    exit(main())
 
 
 def feeling_sick():
     print("Are you feeling sick? ")
     print("[1 = Yes / 2 =  No]: ")
     ans = eval(input())
-    if ans == 2:
+    if ans == 1:
         print("You might want to see a doctor or get some rest and always remember - an apple a day...")
     else:
-        ans = menu()
+        ans = 2
+    exit(main())
 
 
 def naturally_cold_hands():
     print("Do you have naturally cold hands? ")
     print("[1 = Yes / 2 =  No]: ")
     ans = eval(input())
-    if ans == 1:
+    if ans == 2:
         print("Here's how to raise the temperature of your hands: ")
         print(webbrowser.open('http://www.naturalfertilityandwellness.com/raise-basal-body-temperature/'))
     else:
-        ans = menu()
-
+        ans = 2
+    exit(main())
 
 def cold_day_outside():
     print("If you were just outside, was it cold out? ")
     print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
-    if ans == 2:
-        ans = menu()
-    else:
-        print("Here's how to raise yuor temperature on a cold day: ")
+    if ans == 1:
+    	print("Here's how to raise yuor temperature on a cold day: ")
         print(webbrowser.open("https://www.wikihow.com/Increase-Body-Temperature"))
+        ans = 2
+    exit(main())
 
 
 def workout():
@@ -82,9 +84,8 @@ def workout():
     if ans == 1:
         print("Here's how to lower your temperature after working out: ")
         print(webbrowser.open("https://healthyliving.azcentral.com/lower-body-temperature-quickly-after-exercise-17366.html"))
-    else:
-        done = True
-        ans = menu()
+        ans = 2
+    exit(main())
 
 def questions():
     done = False
