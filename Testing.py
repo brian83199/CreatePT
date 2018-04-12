@@ -11,6 +11,7 @@ def menu():
     return option1
 
 #Parker Witt has helped me with ordering th functions to allow the program to work properly. Also helped by removing a return option4 that didnt need to be there.
+
 def stress():
     # done = true
     print("Is the stress caused by work, school, or family? ")
@@ -27,7 +28,7 @@ def stress():
         print("Stress Relief with the Family: ")
         print(webbrowser.open('https://psychcentral.com/lib/tips-to-reduce-family-stress/'))
     else:
-        done = False
+        ans = menu()
 
 
 def anxiety():
@@ -38,7 +39,7 @@ def anxiety():
         print("Here's how to lower your temperature from anxiety ")
         print(webbrowser.open('https://www.calmclinic.com/anxiety/symptoms/hotness'))
     else:
-        done = False
+        ans = menu()
 
 
 def feeling_sick():
@@ -48,7 +49,7 @@ def feeling_sick():
     if ans == 2:
         print("You might want to see a doctor or get some rest and always remember - an apple a day...")
     else:
-        done = True
+        ans = menu()
 
 
 def naturally_cold_hands():
@@ -59,7 +60,7 @@ def naturally_cold_hands():
         print("Here's how to raise the temperature of your hands: ")
         print(webbrowser.open('http://www.naturalfertilityandwellness.com/raise-basal-body-temperature/'))
     else:
-        done = True
+        ans = menu()
 
 
 def cold_day_outside():
@@ -67,7 +68,7 @@ def cold_day_outside():
     print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
     if ans == 2:
-        done = True
+        ans = menu()
     else:
         print("Here's how to raise yuor temperature on a cold day: ")
         print(webbrowser.open("https://www.wikihow.com/Increase-Body-Temperature"))
@@ -77,12 +78,14 @@ def workout():
     print("Did you just workout? ")
     print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
-    if ans == 2:
-        done = True
-    else:
+    if ans == 1:
         print("Here's how to lower your temperature after working out: ")
         print(webbrowser.open(
             "https://healthyliving.azcentral.com/lower-body-temperature-quickly-after-exercise-17366.html"))
+    else:
+	done = True
+	ans = menu()
+
 
 def questions():
     done = False
