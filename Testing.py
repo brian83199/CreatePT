@@ -81,11 +81,10 @@ def workout():
     ans = eval(input())
     if ans == 1:
         print("Here's how to lower your temperature after working out: ")
-        print(webbrowser.open(
-            "https://healthyliving.azcentral.com/lower-body-temperature-quickly-after-exercise-17366.html"))
+        print(webbrowser.open("https://healthyliving.azcentral.com/lower-body-temperature-quickly-after-exercise-17366.html"))
     else:
-	done = True
-	ans = menu()
+        done = True
+        ans = menu()
 
 def questions():
     done = False
