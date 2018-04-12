@@ -75,6 +75,7 @@ def cold_day_outside():
 
 
 def workout():
+    done = False
     print("Did you just workout? ")
     print("[1 = Yes / 2 = No]: ")
     ans = eval(input())
@@ -85,7 +86,6 @@ def workout():
     else:
 	done = True
 	ans = menu()
-
 
 def questions():
     done = False
