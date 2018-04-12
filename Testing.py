@@ -25,7 +25,6 @@ def stress():
         print("Stress Relief at School: ")
         print(webbrowser.open('https://www.verywellmind.com/reduce-student-stress-and-excel-in-school-3145175'))
     else:
-        ans == 3:
         print("Stress Relief with the Family: ")
         print(webbrowser.open('https://psychcentral.com/lib/tips-to-reduce-family-stress/'))
         ans = 0
