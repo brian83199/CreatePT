@@ -144,6 +144,9 @@ def questions():
 
 
 def temp():
+
+#From here to print(temperature) was taken from this link, at the bottom of the page where it says "Step 3B: How to read the temperature in Python" http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/temperature/
+ 
     tfile = open("/sys/bus/w1/devices/10-000802824e58/w1_slave")
     text = tfile.read()
     tfile.close()
@@ -151,7 +154,9 @@ def temp():
     temperature = float(temperature_data[2:])
     temperature = temperature / 1000
     temperature = temperature*(9/5)+32
-    print temperature
+    print(temperature)
+
+
     temperature = float(input())
     if ((temperature < 72.5) or (temperature > 80)):
         print("Are you feeling well today?")
