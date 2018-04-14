@@ -1,7 +1,5 @@
 import webbrowser
-import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BCM)
-GPIO.VERSION
+
 
 def menu():
     print("Hello")
@@ -11,7 +9,7 @@ def menu():
     option1 = eval(input())
     return option1
 
-#Parker Witt has helped me with ordering the functions to allow the program to work properly. Also helped by removing a return option4 that didnt need to be there.
+#Parker Witt has helped me with ordering th functions to allow the program to work properly. Also helped by removing a return option4 that didnt need to be there.
 def stress():
     # done = true
     print("Is the stress caused by work, school, or family? ")
@@ -146,9 +144,6 @@ def questions():
 
 
 def temp():
-
-#From here to print(temperature) was taken from this link, at the bottom of the page where it says "Step 3B: How to read the temperature in Python" http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/temperature/
- 
     tfile = open("/sys/bus/w1/devices/10-000802824e58/w1_slave")
     text = tfile.read()
     tfile.close()
@@ -156,23 +151,22 @@ def temp():
     temperature = float(temperature_data[2:])
     temperature = temperature / 1000
     temperature = temperature*(9/5)+32
-    print(temperature)
+    print temperature
 
-
-    temperature = float(input())
     if ((temperature < 72.5) or (temperature > 80)):
         print("Are you feeling well today?")
-
+        print('[ 1= Yes or 2 = No]: ')
+        ans = int(input())
+        if (ans < 1) or (ans > 2):
+            print(" Invalid response. Please enter  1 for yes or 2 for no")
+            temp()
+        elif ans == 1:
+            done = True
+        else:
+            questions()
     else:
         print("I am glad you are feeling well")
         exit(main())
-    print('[Yes or No]: ')
-    ans = (input())
-
-    if ans.lower() == 'yes':
-        done = True
-    else:
-        questions()
 
 
 
